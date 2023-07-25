@@ -27,7 +27,7 @@ function App() {
       { pokemonDetails && <>
       <p>{pokemonDetails?.name}</p>
       <p>{pokemonDetails?.weight}</p>
-      <div>Abilities: {pokemonDetails.abilities.map((data,index) => <p key={index}>{data.ability.name}</p> )}</div>
+      <div>Abilities: {pokemonDetails.abilities.map((data,index) => <p key={index}>{data?.ability?.name}</p> )}</div>
       </>}
     </div>
   );
